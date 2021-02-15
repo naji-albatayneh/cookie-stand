@@ -3,7 +3,7 @@
 let operationHours=['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
 function randomValue(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+    return Math.ceil(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 }
 
 /////////// Seattle //////////
@@ -12,20 +12,20 @@ let seattle={
     minCustomer:23,
     maxCustomer:65,
     avgCookiesPerCustomer:6.3,
-    customerPerHour:[],
+    // customerPerHour:[],
     cookie:[],
     total:0,
 
-    updateCustomerPerHour:function(){
-        for(let i=0;i<operationHours.length;i++){
-            this.customerPerHour.push(randomValue(this.minCustomer,this.maxCustomer));
-        }
-    },
+    // updateCustomerPerHour:function(){
+    //     for(let i=0;i<operationHours.length;i++){
+    //         this.customerPerHour.push(randomValue(this.minCustomer,this.maxCustomer));
+    //     }
+    // },
 
     updateCookiesPerhour:function(){
 
         for(let i=0;i<operationHours.length;i++){
-            this.cookie.push(randomValue(this.minCustomer,this.maxCustomer)*Math.floor(this.avgCookiesPerCustomer));
+            this.cookie.push(randomValue(this.minCustomer,this.maxCustomer)*Math.ceil(this.avgCookiesPerCustomer));
             this.total= this.total+this.cookie[i];
         }
         this.cookie[this.cookie.length]=this.total;
@@ -53,7 +53,7 @@ let seattle={
     }
 }
 
-seattle.updateCustomerPerHour();
+//seattle.updateCustomerPerHour();
 seattle.updateCookiesPerhour();
 seattle.render();
 
