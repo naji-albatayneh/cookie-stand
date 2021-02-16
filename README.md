@@ -12,4 +12,4 @@ I build a web app with a direct and powerful purpose entitled "cookie-stand". It
     [Class repo - sample](https://github.com/LTUC/amman-201d14/tree/main/class-06)
 
 - **Reflections and Comments:**
-This is an initial setup for the readme file.
+I used a constuctor function to create objects.
