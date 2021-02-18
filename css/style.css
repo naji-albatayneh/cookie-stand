@@ -126,3 +126,19 @@ fieldset button{
     color: wheat;
     font-weight: bold;
 }
+
+.row img{
+    float: left;
+    width: 135px;
+    padding: 5pxpx;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid teal;
+    border-radius: 10px;
+}
+
+footer{
+    clear: both;
+}
