@@ -31,6 +31,11 @@ nav ul li a{
 
 }
 
+nav ul li a:hover{
+    font-weight: bolder;
+    color:teal;
+}
+
 img{
     height: 80px;
     width: 200px;
@@ -86,4 +91,38 @@ td{
 
 input:required{
     border: 1px solid crimson;
+}
+
+fieldset{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    color: teal;
+}
+fieldset label, input,button{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+fieldset input{
+background-color: white;
+}
+
+fieldset button{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 30px;
+    background-color: teal;
+    color: wheat;
+    font-weight: bold;
 }
