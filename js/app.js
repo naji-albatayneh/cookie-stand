@@ -121,11 +121,11 @@ function cookieStandCreator(event){
   event.preventDefault();
 
   const locationName = event.target.locField.value;
-  const minCust =  event.target.minField.value;
+  const minCust =  parseInt(event.target.minField.value);
   minCustArr.push(minCust);
-  const maxCust =  event.target.maxField.value;
+  const maxCust =  parseInt(event.target.maxField.value);
   maxCustArr.push(minCust);
-  const avgCookie =  event.target.avgField.value;
+  const avgCookie =  parseFloat(event.target.avgField.value);
   avgCookieArr.push(avgCookie);
 
   // Create New
