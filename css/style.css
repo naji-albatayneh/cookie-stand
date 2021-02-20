@@ -1,79 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+
 *{
     background-color: wheat;
+}
+
+header{
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img{
+    height: 80px;
+    width: 200px;
+    padding: 10px;
+    position:sticky;
 }
 
 h1{
     color: teal;
     text-shadow: yellow;
+    display: inline;
+    position:absolute;
+    top: -10px;
+    font-weight: bolder;
+    margin-left: 5px;
+    font-family: 'Bungee Inline', cursive;
+    font-size:x-large;
+}
+
+header p{
+    color:crimson;
+    display: inline;
+    position:absolute;
+    top: 30px;
+    margin-left: 5px;
+    font-family: 'Bungee Inline', cursive;
+    font-size:medium;
 }
 
 nav ul{
     text-align: center;
+    position:absolute;
+    top: 1px;
+    right: 20px;
 }
 
 nav ul li{
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
-    color:crimson;
     display: inline-block;
     text-align: center;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 nav ul li a{
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
-    color:crimson;
+    color:teal;
     display: inline-block;
     text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    font-size:medium;
+    padding: 5px;
+    border-radius: 30px;
 
 }
 
 nav ul li a:hover{
     font-weight: bolder;
-    color:teal;
+    color:crimson;
 }
 
-img{
-    height: 80px;
-    width: 200px;
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer p{
-    text-align: center;
-    color: teal;
-    text-align: center;
-}
+
 
 #mainElement p{
     font-weight: bold;
     font-size: larger;
 }
 
-main p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+.column{
+    float: left;
+    margin-top: 70px;
+    width: 50%;
+    padding: 5px;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.column img{
+    width:100%;
+    height: 100%;
+    padding: 5px;
+    border: solid crimson;
+    border-radius: 15px;
+}
+main ul {
+    margin-left: 5px;
 }
 
 main ul li{
-    margin-top: 10px;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    display: inline-block;
+    border: solid crimson;
+    border-radius: 15px;
+    width:200px;
+    padding: 13px;
 }
 
-div{
-    text-align: center;
-    margin-left: 50px;
-}
 
 table{
     margin-top: 70px;
     margin-bottom: 100px;
     border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:brown;
 }
 
 th{
@@ -84,11 +142,14 @@ th{
 
 td:first-child{
     border: 1px solid black;
-    background-color:tomato;
+    background-color:brown;
+    font-weight: bold;
+    color:wheat;
 }
 
 td{
     border:1px solid teal;
+    text-align: center;
 }
 
 input:required{
@@ -97,8 +158,8 @@ input:required{
 
 fieldset{
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -129,18 +190,48 @@ fieldset button{
     font-weight: bold;
 }
 
+.row{
+    clear: both;
+
+}
+
 .row img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid crimson;
+    border-radius: 15px;
+}
+
+.section{
     float: left;
-    width: 135px;
-    padding: 5pxpx;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: solid teal;
-    border-radius: 10px;
+    margin-top: 50px;
+    width: 33.33%;
+    padding: 10px;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#i1{
+    height: 412px;
+}
+#i2{
+    height: 433px;
 }
 
 footer{
+    width: 90%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
     clear: both;
+}
+
+footer p{
+    margin-top: 100px;
+    text-align: center;
+    color: teal;
 }
